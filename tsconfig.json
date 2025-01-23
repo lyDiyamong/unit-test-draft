@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES2020", // Adjust based on your environment
+        "module": "CommonJS", // Required for Jest
+        "strict": true, // Recommended for type safety
+        "esModuleInterop": true, // For compatibility with CommonJS modules
+        "skipLibCheck": true, // Speeds up compilation
+        "outDir": "./dist", // Output directory
+        "baseUrl": ".", // Base directory
+        "paths": {
+            "*": ["node_modules/*"] // Module resolution
+        },
+        "resolveJsonModule": true
+    },
+    "include": ["src/**/*", "tests/**/*"], // Adjust based on your directory structure
+    "exclude": ["node_modules", "dist"]
+}
