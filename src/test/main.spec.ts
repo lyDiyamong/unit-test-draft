@@ -1,5 +1,5 @@
 import { expect, test } from "@jest/globals";
-import { sum } from "../app/main";
+import { add } from "../app/BasicFn";
 
 // test("Expect 1 + 2 to be 3", () => expect(sum(1, 2)).not.toBe(4));
 // test("resolves to lemon", () => {
@@ -53,5 +53,3 @@ import { sum } from "../app/main";
 //         expect(mockCb).toBeCalledTimes(5);
 //     });
 // });
-
-

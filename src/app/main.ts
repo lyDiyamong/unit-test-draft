@@ -1,25 +1,23 @@
-import userData from "./data/user.json";
-import { IAuthData } from "./interface/authData";
+// import userData from "./data/user.json";
+// import { IAuthData } from "./interface/authData";
 
-export const sum = (a: number, b: number) => {
-    return a + b;
-};
+// export const sum = (a: number, b: number) => {
+//     return a + b;
+// };
 
-export const arrayContainer = (arrayNumber: number[]) => {
-    return arrayNumber;
-};
-console.log(userData);
-export function authUser(username: string, password: string): IAuthData {
-    const isUserExisted = userData.some(
-        (user) => user.username === username && user.password === password
-    );
+// export const arrayContainer = (arrayNumber: number[]) => {
+//     return arrayNumber;
+// };
 
-    return {
-        usernameToLower: username.toLowerCase(),
-        userNameChar: username.split(""),
-        userDetail: {},
-        isAuthenticated: isUserExisted,
-    };
-}
+// export function authUser(username: string, password: string): IAuthData {
+//     const isUserExisted = userData.some(
+//         (user) => user.username === username && user.password === password
+//     );
 
-authUser("gio1", "pass1234");
+//     return {
+//         usernameToLower: username.toLowerCase(),
+//         userNameChar: username.split(""),
+//         userDetail: {},
+//         isAuthenticated: isUserExisted,
+//     };
+// }
