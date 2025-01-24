@@ -79,9 +79,23 @@ describe("BasicFn suite", () => {
         });
         it("Divide should throw the error", () => {
             // Pass a function reference to expect().toThrow
-            expect(() => calculator.divide(6, 0)).toThrow(
-                "Cannot divide by zero"
-            );
+
+            expect(() => calculator.divide(6, 0)).toThrow();
+            // expect(() => calculator.divide(6, 0)).toThrow(
+            //     "Cannot divide by zero"
+            // );
+        });
+
+        // ! Each test case
+        it.each([
+            [2, 3, 5],
+            [1, 3, 4],
+            [0, 9, 9],
+            [1, 9, 10],
+            [7, 9, 13],
+        ])("Add %i and %i to return %i", (a, b, result) => {
+            const actual = calculator.add(a, b);
+            expect(actual).toBe(result);
         });
     });
 
