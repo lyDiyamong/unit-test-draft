@@ -12,6 +12,8 @@ const config: import("ts-jest").JestConfigWithTsJest = {
     testMatch: ["**/?(*.)+(spec|test).[tj]s?(x)"],
     // Show all test results, including passed tests
     verbose: true, // <---- Add this line
+    collectCoverage: true,
+    collectCoverageFrom: ['<rootDir>/src/app/**/*.ts']
 };
 
 export default config;
